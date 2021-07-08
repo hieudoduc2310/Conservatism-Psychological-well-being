@@ -55,6 +55,6 @@ Schwartz’s Cultural Dimension scale, which have been demonstrated to capture t
 conservative attitudes well in previous research ([Schwartz, 1999](https://psycnet.apa.org/record/1999-00535-002)). Therefore, I computed
 “Mean_Scaled_Score” from these items, which demonstrated good reliability (Cronbach’s α = .73).
 There was no need to delete items.\
-**2.2.2. Operationalization of the RQ**
+**2.2.2. Operationalization of the RQ**\
 &emsp; Based on the conceptualization of the DV and IV, I operationalize the RQ as described in table 1. The
 control variables that were included in the models and its reason for inclusion are shown in appendix I.
