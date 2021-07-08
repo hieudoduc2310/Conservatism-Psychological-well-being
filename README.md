@@ -58,6 +58,7 @@ There was no need to delete items.\
 **2.2.2. Operationalization of the RQ**\
 &emsp; Based on the conceptualization of the DV and IV, I operationalize the RQ as described in table 1. The
 control variables that were included in the models and its reason for inclusion are shown in appendix I.\
+![213123123](https://user-images.githubusercontent.com/57223360/124988748-abcf0f00-e03e-11eb-9b8b-1217d2ed1c7b.png)
 **2.2.3. Results from the inferential modelling**\
 &emsp; The specifications of all models can be found in appendix K, and its output in appendix J. To address the
 first sub-question, we first regressed life satisfaction (V23) on all items (R2 = *.45*, F[*15,12165*] = *608.93*, p
