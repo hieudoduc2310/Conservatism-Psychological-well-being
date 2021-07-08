@@ -1,6 +1,6 @@
 # Conservatism-Psychological-well-being
 **1. Introduction**\
-&emsp; This project discusses conceptualization, operationalization and inferential modelling for the main research question “Are conservative attitudes good or bad for your psychological well-being" using the World Survey Data Wave 6. To investigate the aforementioned research question, I wil go into details and step by step of the analysis, including data cleaning, inferential analysis and prediction efforts.\
+&emsp; This project discusses conceptualization, operationalization and inferential modelling for the main research question ***“Are conservative attitudes good or bad for your psychological well-being"*** using the World Survey Data Wave 6. To investigate the aforementioned research question, I wil go into details and step by step of the analysis, including data cleaning, EDA, and inferential analysis.\
 **2. Analytic Tasks**
 **2.1 Data Preparation**\
 **2.1.1. Exploring missing data**\
@@ -34,10 +34,10 @@ prediction (appendix *N*).\
 **2.1.4. Missing data treatment**\
 &emsp; I treated missing data with Multiple Imputation using “mice”, as the procedure gives unbiased
 standard errors for estimates. Additionally, the covariance coverage allows for multiple imputation (cc >
-0.77). The hyperparameters were set as follows: m = 20, maxit = 10 and method = pmm / logreg.
+*0.77*). The hyperparameters were set as follows: m = *20*, maxit = *10* and method = pmm / logreg.
 Predictive mean matching was used as the method stays close to the values of the completely observed
 dataset, while the categorical gender variable was imputed using logistic regression. The multiply
-imputed dataset shows convergence (appendix E) and sensible density (appendix F). These multiply
+imputed dataset shows convergence (appendix *E*) and sensible density (appendix *F*). These multiply
 imputed datasets were used for both inferential and prediction tasks.\
 **2.2 Inferential Modeling**\
 &emsp; This chapter discusses conceptualization, operationalization and inferential modelling for the main
@@ -57,7 +57,37 @@ conservative attitudes well in previous research ([Schwartz, 1999](https://psycn
 There was no need to delete items.\
 **2.2.2. Operationalization of the RQ**\
 &emsp; Based on the conceptualization of the DV and IV, I operationalize the RQ as described in table 1. The
-control variables that were included in the models and its reason for inclusion are shown in appendix I.\\
+control variables that were included in the models and its reason for inclusion are shown in appendix I.\
+**2.2.3. Results from the inferential modelling**\
+&emsp; The specifications of all models can be found in appendix K, and its output in appendix J. To address the
+first sub-question, we first regressed life satisfaction (V23) on all items (R2 = *.45*, F[*15,12165*] = *608.93*, p
+< *.001*, RIV = *.094*). As shown in appendix *J*, the regression coefficients of V70, V72, V78, V79 were nonsignificant in this model. After controlling for the control variables, V71 appears to have the largest partial effect on life satisfaction, aside from the control variables (β = *.042*, SE = *.012*, t[*12165*] = *3.522*, p < *.001*, FMI = *.142*), while V73 appears to have the smallest partial effect on the DV (β = *-.028*, SE = *.012*, t[*12165*] = *-2.374*, p < *.05*, FMI = *.142*). Looking at the direction of the partial effects, V71 and V76 have a positive effect, while V73, V75 and V77 have a negative effect on the DV, after controlling for the
+control variables. Furthermore, we regressed life satisfaction on Mean_Scaled_Score and this model
+significantly explains 43% of the variability in life satisfaction (R2 = *.43*, F[*7,12173*] = *1363.587*, p < *.001*,
+RIV = *.040*). However, the effect of Mean_Scaled_Score is statistically non-significant (β = .019, SE = .026,
+t[12173] = *.73*, p > *.05*, FMI = *.11*).\
+&emsp; To address the second sub-question, we first regressed happiness (V10) on all items (R
+2 = *.34*, F[*15,12165*] = *375.18*, p < *.001*, RIV = *.11*). As presented in appendix *J*, the regression coefficients V72
+and V78 were not significant in this model. After controlling for the control variables, V79 appears to
+have the largest partial effect on happiness, aside from the control variables (β = *-.024*, SE = *.004*,
+t[*12165*] = *5.859*, p < *.001*, FMI = *.12*), while similarly to model 1, V73 appears to have the smallest
+partial effect on happiness (β = *-.01*, SE = *.004*, t[*12165*] = *-2.353*, p < *.01*, FMI = *.19*). Looking at the
+direction of the partial effects, V71, V75, V77 and V79 have a positive effect, while V70, V73 and V76
+have a negative effect on the DV, after controlling for the control variables. Furthermore, we regressed
+happiness on Mean_Scaled_Score and this model significantly explains 33% of the variability in
+happiness (R2 = *.33*, F[*7,12165*] = *812.274*, p < *.001*, RIV = *.05*). However, the effect of
+Mean_Scaled_Score is statistically non-significant (β = *.016*, SE = *.009*, t[*12173*] = *1.87*, p > *.05*, FMI
+= *.16*).\
+**3. Conclusion**\
+&emsp; In this report, I investigated the RQ ***“Are conservative attitudes good or bad for your psychological
+well-being?”***.\
+&emsp; Even though the results suggest a small and positive overall effect of conservative attitudes on
+life satisfaction and happiness, no statistical support for this finding at a p <.05 level. However,
+on an item-by-item basis I did find significant, but multidirectional effects. This is surprising, given that
+the items are reverse-coded and measure the same underlying construct unidirectionally. Therefore,
+future research must subject this scale to validity and reliability checks beyond Cronbach’s alpha. As a
+consequence, to prevent a Type II error, this report lacks evidence to provide a conclusive answer to the
+research questions.\
 **3. Lisence**\
 &emsp; This project was originially conducted by a group of four: Hieu D. DO, Hoang Phuc Pham, Larissa Chua, Ryan van Velzen in the course Stats & Methodology. However, there are significant modifications after the course is completed. All the credits of new insights and modification belongs to the repository's author.
 
