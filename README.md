@@ -57,7 +57,7 @@ conservative attitudes well in previous research ([Schwartz, 1999](https://psycn
 There was no need to delete items.\
 **2.2.2. Operationalization of the RQ**\
 &emsp; Based on the conceptualization of the DV and IV, I operationalize the RQ as described in table 1. The
-control variables that were included in the models and its reason for inclusion are shown in appendix I.
+control variables that were included in the models and its reason for inclusion are shown in appendix I.\\
 **3. Lisence**\
 &emsp; This project was originially conducted by a group of four: Hieu D. DO, Hoang Phuc Pham, Larissa Chua, Ryan van Velzen in the course Stats & Methodology. However, there are significant modifications after the course is completed. All the credits of new insights and modification belongs to the repository's author.
 
